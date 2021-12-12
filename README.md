@@ -13,4 +13,16 @@
   * 한번 생성되면 내부 상태가 절대로 바뀌지 않는 불변 객체
   * 입력이 같으면 항상 같은 출력을 내놓고 다른 객체의 상태를 변경하지 않으며, 외부 환경과 상호작용하지 않는 순수 함수
 
-### var val 차이점
+### var val
+* val 특징
+  * 블록을 시작할 때 한 번만 초기화
+  ```
+  val message: String
+  if(canPerformOperation()) {
+    message = "Success"
+  } else {
+    message = "Failed"
+  }
+  ```
+  * 참조 자체는 불변일지라도 그 참조가 가리키는 객체의 내부 값은 변경될 수 있음
+  
