@@ -1,3 +1,5 @@
+package algorithm
+
 class SubrectangleQueries(private var rectangle: Array<IntArray>) {
     fun updateSubrectangle(row1: Int, col1: Int, row2: Int, col2: Int, newValue: Int) {
 
