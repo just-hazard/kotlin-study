@@ -20,3 +20,4 @@ class Test {
         assertThat(numbers1.numbers).hasSize(1)
     }
 }
+
