@@ -19,5 +19,9 @@ class ExpansionFunction {
         StringBuilder().apply {
 
         }
+
+        StringBuilder().also {
+
+        }
     }
 }
