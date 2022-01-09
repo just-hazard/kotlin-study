@@ -23,5 +23,9 @@ class ExpansionFunction {
         StringBuilder().also {
 
         }
+
+        StringBuilder().let {
+
+        }
     }
 }
