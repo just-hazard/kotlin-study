@@ -20,6 +20,14 @@ class ScopeFunction {
             assertThat(this.age).isEqualTo(25)
         }
     }
+
+    @Test
+    fun `also Test`() {
+        Person("이름", 25).apply {
+            assertThat(this.name).isEqualTo("이름")
+            assertThat(this.age).isEqualTo(25)
+        }
+    }
 }
 
 data class Person(
