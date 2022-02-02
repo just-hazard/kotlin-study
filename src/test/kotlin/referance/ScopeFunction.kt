@@ -15,7 +15,7 @@ class ScopeFunction {
 
     @Test
     fun `with Test`() {
-        with(Person("이름", 25)) {
+        with(personSample()) {
             assertThat(this.name).isEqualTo("이름")
             assertThat(this.age).isEqualTo(25)
         }
@@ -23,10 +23,22 @@ class ScopeFunction {
 
     @Test
     fun `also Test`() {
-        Person("이름", 25).apply {
+        personSample().also {
+            assertThat(it.name).isEqualTo("이름")
+            assertThat(it.age).isEqualTo(25)
+        }
+    }
+
+    @Test
+    fun `apply Test`() {
+        personSample().apply {
             assertThat(this.name).isEqualTo("이름")
             assertThat(this.age).isEqualTo(25)
         }
+    }
+
+    private fun personSample(): Person {
+        return Person("이름", 25)
     }
 }
 
